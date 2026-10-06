@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Blast Free</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Puzzle game</p>
+          <h1>Block Blast Free</h1>
+        </div>
+        <button id="new-game" class="primary-btn">New Game</button>
+      </header>
+
+      <section class="hud">
+        <div class="stat-card">
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">Best</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </section>
+
+      <main class="game-layout">
+        <div class="board-panel">
+          <div id="board" class="board" aria-label="Game board"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="tray-header">
+            <h2>Pieces</h2>
+            <button id="rotate-piece" class="ghost-btn" type="button">Rotate</button>
+          </div>
+          <div id="piece-tray" class="piece-tray" aria-live="polite"></div>
+          <p id="status" class="status">Select a piece to begin.</p>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
